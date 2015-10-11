@@ -50,6 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="HeapTest.cs" />
+    <Compile Include="ReconstructTreeTest.cs" />
     <Compile Include="TraversalTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

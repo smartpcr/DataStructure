@@ -11,7 +11,7 @@ namespace UnitTests
 		public void TestInorderTraversal()
 		{
 			const string expectedOrder = "28,271,0,6,561,17,3,314,2,401,641,1,257,6,271,28";
-            var root = createBinaryTree();
+            var root = CreateBinaryTree();
 			string inorderSeq = new Traversal().InorderTraversal(root);
 			Assert.AreEqual(expectedOrder, inorderSeq);
 
@@ -19,7 +19,7 @@ namespace UnitTests
 			Assert.AreEqual(expectedOrder, inorderSeq2);
 		}
 
-		private BinaryTree<int> createBinaryTree()
+		private BinaryTree<int> CreateBinaryTree()
 		{
 			return new BinaryTree<int>(314,
 				new BinaryTree<int>(
@@ -49,6 +49,8 @@ namespace UnitTests
 						271, 
 						null, 
 						new BinaryTree<int>(28))));
-		} 
+		}
+
+		
 	}
 }
